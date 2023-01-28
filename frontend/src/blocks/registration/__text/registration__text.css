@@ -1,0 +1,16 @@
+.registration__text {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin: 15px auto 80px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .registration__text {
+        margin: 20px auto 40px;
+    }
+}
