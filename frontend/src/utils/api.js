@@ -140,7 +140,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://api.gorodetskaya.mesto.nomoredomainsclub.ru',
 });
 
 export default api;
