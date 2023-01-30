@@ -83,7 +83,7 @@ function App() {
     //реализация лайков
     function handleCardLike(card) {
         //определяем, ставил ли пользователь лайк
-        const isLiked = card.likes.some(i => i._id === currentUser._id);
+        const isLiked = card.likes.some(id => id === currentUser._id);
 
         // запрос в API и обновление карточки
         api.changeLikeCardStatus(card._id, !isLiked)
@@ -186,7 +186,7 @@ function App() {
                 auth.getContent(jwt).then((res) => {
                     if (res) {
                         setLoggedIn(true);
-                        setEmail(res.data.email);
+                        setEmail(res.email);
                         history.push('/');
                     }
                 })
